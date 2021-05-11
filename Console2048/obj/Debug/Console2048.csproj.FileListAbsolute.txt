@@ -1,0 +1,12 @@
+D:\Month01\SolutionBase\Console2048\bin\Debug\Console2048.exe.config
+D:\Month01\SolutionBase\Console2048\obj\Debug\Console2048.csprojResolveAssemblyReference.cache
+D:\Month01\SolutionBase\Console2048\bin\Debug\Console2048.exe
+D:\Month01\SolutionBase\Console2048\bin\Debug\Console2048.pdb
+D:\Month01\SolutionBase\Console2048\obj\Debug\Console2048.exe
+D:\Month01\SolutionBase\Console2048\obj\Debug\Console2048.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\Console2048\bin\Debug\Console2048.exe.config
+C:\Users\Administerb\Desktop\Project\SolutionBase\Console2048\obj\Debug\Console2048.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\Console2048\obj\Debug\Console2048.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\Console2048\bin\Debug\Console2048.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\Console2048\bin\Debug\Console2048.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\Console2048\obj\Debug\Console2048.csprojResolveAssemblyReference.cache
