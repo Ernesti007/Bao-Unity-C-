@@ -1,0 +1,6 @@
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找数组里的最大值\bin\Debug\ConsoleApplication3-08查找数组里的最大值.exe.config
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找数组里的最大值\bin\Debug\ConsoleApplication3-08查找数组里的最大值.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找数组里的最大值\bin\Debug\ConsoleApplication3-08查找数组里的最大值.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.csprojResolveAssemblyReference.cache
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.pdb

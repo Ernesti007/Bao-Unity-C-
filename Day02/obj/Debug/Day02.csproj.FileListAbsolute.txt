@@ -1,0 +1,12 @@
+D:\Month01\SolutionBase\Day02\bin\Debug\Day02.exe.config
+D:\Month01\SolutionBase\Day02\bin\Debug\Day02.exe
+D:\Month01\SolutionBase\Day02\bin\Debug\Day02.pdb
+D:\Month01\SolutionBase\Day02\obj\Debug\Day02.csprojResolveAssemblyReference.cache
+D:\Month01\SolutionBase\Day02\obj\Debug\Day02.exe
+D:\Month01\SolutionBase\Day02\obj\Debug\Day02.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\Day02\bin\Debug\Day02.exe.config
+C:\Users\Administerb\Desktop\Project\SolutionBase\Day02\bin\Debug\Day02.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\Day02\bin\Debug\Day02.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\Day02\obj\Debug\Day02.csprojResolveAssemblyReference.cache
+C:\Users\Administerb\Desktop\Project\SolutionBase\Day02\obj\Debug\Day02.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\Day02\obj\Debug\Day02.pdb

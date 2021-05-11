@@ -1,0 +1,6 @@
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\bin\Debug\ConsoleApplication3-04.exe.config
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\bin\Debug\ConsoleApplication3-04.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\bin\Debug\ConsoleApplication3-04.pdb
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.csprojResolveAssemblyReference.cache
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.exe
+C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.pdb
