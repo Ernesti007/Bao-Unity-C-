@@ -11,7 +11,6 @@ namespace ConsoleApplication4_02
         static void Main(string[] args)
         {
             Console.WriteLine();
-            Console.ReadLine();
         }
     }
 }
