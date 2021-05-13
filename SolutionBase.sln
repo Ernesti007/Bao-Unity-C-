@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3-07数�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3-08查找数组里的最大值", "ConsoleApplication3-08查找数组里的最大值\ConsoleApplication3-08查找数组里的最大值.csproj", "{DADB46F5-30BD-4A3B-834E-128FFD5E932C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication4-02", "ConsoleApplication4-02\ConsoleApplication4-02.csproj", "{1A8805CE-B448-49C8-9A46-5F25E9D57B8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{DADB46F5-30BD-4A3B-834E-128FFD5E932C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DADB46F5-30BD-4A3B-834E-128FFD5E932C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DADB46F5-30BD-4A3B-834E-128FFD5E932C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8805CE-B448-49C8-9A46-5F25E9D57B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8805CE-B448-49C8-9A46-5F25E9D57B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8805CE-B448-49C8-9A46-5F25E9D57B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8805CE-B448-49C8-9A46-5F25E9D57B8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
