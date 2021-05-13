@@ -7,3 +7,6 @@ C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-08查找�
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-08查找数组里的最大值\bin\Debug\ConsoleApplication3-08查找数组里的最大值.exe.config
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.exe
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-08查找数组里的最大值\bin\Debug\ConsoleApplication3-08查找数组里的最大值.exe.config
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-08查找数组里的最大值\obj\Debug\ConsoleApplication3-08查找数组里的最大值.pdb
