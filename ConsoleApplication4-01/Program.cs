@@ -27,12 +27,24 @@ namespace ConsoleApplication4_01
                     Console.WriteLine("输入的成绩有误");
                 }
             }
-            Console.WriteLine("输入完成,以下为输入的学生成绩：");
-            for (int i = 0; i < g.Length; i++)
+            //数组倒排
+            float[] h = new float[all];
+            for (int o = g.Length;
+                o > 0; o--)
             {
-                Console.WriteLine("第{1}个学生：{0}",g[i],i+1);
+                h[all - o] = g[o - 1];
+            }
+            Console.WriteLine("输入完成,以下为输入的学生成绩倒排：");
+            foreach (int item in h)
+            {
+                Console.WriteLine(item);
             }
             Console.ReadLine();
+            /*for (int i = 0; i < g.Length; i++)
+            {
+                Console.WriteLine("第{0}个学生：{1}", i + 1, g[i]);
+            }
+            Console.ReadLine();*/
         }
     }
 }
