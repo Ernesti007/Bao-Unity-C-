@@ -8,7 +8,22 @@ namespace ConsoleApplication4_01
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
+        {
+            int[] arr = new int[3] { 1, 2, 3 };
+            printall(arr);
+            Console.ReadLine();
+        }
+        private static void printall(Array a)
+        {
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
+
+
+        }
+        static void Main1(string[] args)
         {
             Console.WriteLine("请输入学生总数：");
             int all = int.Parse(Console.ReadLine());
