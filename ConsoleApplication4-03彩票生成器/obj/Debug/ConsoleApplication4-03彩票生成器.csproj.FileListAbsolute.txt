@@ -1,0 +1,6 @@
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-03彩票生成器\bin\Debug\ConsoleApplication4-03彩票生成器.exe.config
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-03彩票生成器\bin\Debug\ConsoleApplication4-03彩票生成器.exe
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-03彩票生成器\bin\Debug\ConsoleApplication4-03彩票生成器.pdb
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-03彩票生成器\obj\Debug\ConsoleApplication4-03彩票生成器.csprojResolveAssemblyReference.cache
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-03彩票生成器\obj\Debug\ConsoleApplication4-03彩票生成器.exe
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-03彩票生成器\obj\Debug\ConsoleApplication4-03彩票生成器.pdb
