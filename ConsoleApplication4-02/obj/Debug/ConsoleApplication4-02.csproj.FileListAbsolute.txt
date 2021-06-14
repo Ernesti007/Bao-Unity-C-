@@ -1,0 +1,5 @@
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-02\bin\Debug\ConsoleApplication4-02.exe.config
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-02\bin\Debug\ConsoleApplication4-02.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-02\bin\Debug\ConsoleApplication4-02.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-02\obj\Debug\ConsoleApplication4-02.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-02\obj\Debug\ConsoleApplication4-02.pdb

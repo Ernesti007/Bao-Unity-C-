@@ -4,3 +4,9 @@ C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\bin\Deb
 C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.csprojResolveAssemblyReference.cache
 C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.exe
 C:\Users\Administerb\Desktop\Project\SolutionBase\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-04\bin\Debug\ConsoleApplication3-04.exe.config
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-04\bin\Debug\ConsoleApplication3-04.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-04\bin\Debug\ConsoleApplication3-04.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.csprojResolveAssemblyReference.cache
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication3-04\obj\Debug\ConsoleApplication3-04.pdb

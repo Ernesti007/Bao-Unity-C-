@@ -10,3 +10,9 @@ C:\Users\Administerb\Desktop\Project\SolutionBase\Day06\bin\Debug\Day06.pdb
 C:\Users\Administerb\Desktop\Project\SolutionBase\Day06\obj\Debug\Day06.csprojResolveAssemblyReference.cache
 C:\Users\Administerb\Desktop\Project\SolutionBase\Day06\obj\Debug\Day06.exe
 C:\Users\Administerb\Desktop\Project\SolutionBase\Day06\obj\Debug\Day06.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\Day06\bin\Debug\Day06.exe.config
+G:\ALLSOFT\Git\Bao-Unity-C-\Day06\bin\Debug\Day06.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\Day06\bin\Debug\Day06.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\Day06\obj\Debug\Day06.csprojResolveAssemblyReference.cache
+G:\ALLSOFT\Git\Bao-Unity-C-\Day06\obj\Debug\Day06.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\Day06\obj\Debug\Day06.pdb

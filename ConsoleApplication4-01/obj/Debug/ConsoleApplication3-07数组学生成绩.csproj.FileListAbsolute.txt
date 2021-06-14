@@ -4,3 +4,9 @@ D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\obj\Debug\ConsoleApplication4
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\bin\Debug\ConsoleApplication4-01.exe
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\bin\Debug\ConsoleApplication4-01.pdb
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\obj\Debug\ConsoleApplication3-07数组学生成绩.csprojResolveAssemblyReference.cache
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\bin\Debug\ConsoleApplication4-01.exe.config
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\bin\Debug\ConsoleApplication4-01.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\bin\Debug\ConsoleApplication4-01.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\obj\Debug\ConsoleApplication3-07数组学生成绩.csprojResolveAssemblyReference.cache
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\obj\Debug\ConsoleApplication4-01.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication4-01\obj\Debug\ConsoleApplication4-01.pdb
