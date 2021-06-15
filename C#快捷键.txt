@@ -1,0 +1,4 @@
+Ctrl+E,C  ：注释选中内容
+Ctrl+A  Ctrl+K,F  ：全选，自动对其缩进代码
+Ctrl+K，C  ：注释选中行
+Ctrl+K，U  ：取消注释选中行

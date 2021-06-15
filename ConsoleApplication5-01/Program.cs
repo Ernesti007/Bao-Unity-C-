@@ -217,7 +217,7 @@ namespace ConsoleApplication5_01
                 Coche = RemoveZero(Coche);              //去0
                 array = ReRightLoad(array, Coche, i);      //复原
             }
-        }
+        }   
         private static void PrintMap(int[,] map)
         {
             for (int r = 0; r < map.GetLength(0); r++)
