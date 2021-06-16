@@ -10,6 +10,12 @@ namespace ConsoleApplication5_01
     {
         static void Main(string[] args)
         {
+
+
+        }
+
+        static void Main2(string[] args)
+        {
             int[,] map =
               {
                 {0,2,2,2,2},
@@ -20,10 +26,8 @@ namespace ConsoleApplication5_01
             PrintMap(map);
             for (; true; )
             {
-                //Move(map, MoveDirection.w);
-                string test = Console.ReadLine();
-                Move(map, test);
-                PrintMap(map);
+                Move(map, MoveDirection.Down);
+                PrintMap(map); 
             }
 
         }
@@ -50,7 +54,7 @@ namespace ConsoleApplication5_01
         private static int[] RemoveZeroBack(int[] array)    //移动0到开头！！！！！！！！！！！！
         {
             int t = array.Length - 1;//记录已经填过的索引
-            for (int i = array.Length-1; i >=0; i--)
+            for (int i = array.Length - 1; i >= 0; i--)
             {      //拿一个数
                 if (array[i] == 0) continue;
                 else
@@ -75,7 +79,7 @@ namespace ConsoleApplication5_01
                     array[i] += array[i + 1];
                     array[i + 1] = 0;
                 }
-            } 
+            }
             return array;
         }
         private static int[] UpLoad(int[,] array, int Lie)//上移
@@ -124,7 +128,7 @@ namespace ConsoleApplication5_01
         }
         private static int[,] ReDownLoad(int[,] array, int[] array2, int Lie)//还原下移
         {
-            array2=RemoveZeroBack(array2);
+            array2 = RemoveZeroBack(array2);
             for (int i = 0; i < array2.Length; i++)//获取数组行数
             {
                 array[i, Lie] = array2[i];
@@ -148,32 +152,26 @@ namespace ConsoleApplication5_01
             }
             return array;
         }
-        private static void Move(int[,] map, string  direction)
+        private static void Move(int[,] map, MoveDirection direction)
         {
             switch (direction)
             {
-                case "w":
+                case MoveDirection.Up:
                     MoveUp(map);
                     break;
-                case "s":
+                case MoveDirection.Down:
                     MoveDown(map);
                     break;
-                case "a":
+                case MoveDirection.Left:
                     MoveLeft(map);
                     break;
-                case "d":
+                case MoveDirection.Right:
                     MoveRight(map);
                     break;
             }
         }
-        enum MoveDirection : int
-        {
-            //******定义值*******
-            w,
-            s,
-            a,
-            d
-        }
+
+
         private static void MoveUp(int[,] array)
         {
             for (int i = 0; i < array.GetLength(1); i++)//读取数组列数
@@ -217,7 +215,7 @@ namespace ConsoleApplication5_01
                 Coche = RemoveZero(Coche);              //去0
                 array = ReRightLoad(array, Coche, i);      //复原
             }
-        }   
+        }
         private static void PrintMap(int[,] map)
         {
             for (int r = 0; r < map.GetLength(0); r++)
@@ -271,5 +269,6 @@ namespace ConsoleApplication5_01
             Console.ReadLine();
         }
         }*/
+
     }
 }
