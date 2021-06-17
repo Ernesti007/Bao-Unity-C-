@@ -23,6 +23,7 @@ namespace ConsoleApplication5_02
         {
             S = Long * Kuan;
             C = (Long + Kuan) * 2;
+            //wqewe
         }
     }
 
