@@ -10,6 +10,14 @@ namespace ConsoleApplication5_02
     {
         static void Main(string[] args)
         {
+            Wife wife01=new Wife() ;
+            wife01.SetName("a");
+        }
+
+
+
+        /*static void Main(string[] args)
+        {
             int Long = 4;
             int Kuan = 5;
             int S;
@@ -23,8 +31,7 @@ namespace ConsoleApplication5_02
         {
             S = Long * Kuan;
             C = (Long + Kuan) * 2;
-            //wqewe
-        }
+        }*/
     }
 
 }
