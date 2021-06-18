@@ -8,16 +8,31 @@ namespace ConsoleApplication5_02
 {
     class Wife
     {
-        private string Name;
-        private string Sex;
+        public  string Name;
+
         private int Age;
-        public  void  SetName(string Name)
+        public string mmmm
+        {
+            get
+            {
+                return Name; 
+            } 
+        }
+        public void SetName(string Name)
         {
             this.Name = Name;
         }
-        private void SetAge(int age)
+        public void SetAge(int age)
         {
             this.Age = age;
+        }
+        public int GetAge()
+        {
+            return Age;
+        }
+        public string GetName()
+        {
+            return Name;
         }
     }
 }

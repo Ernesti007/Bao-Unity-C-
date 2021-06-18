@@ -10,8 +10,15 @@ namespace ConsoleApplication5_02
     {
         static void Main(string[] args)
         {
-            Wife wife01=new Wife() ;
+            Wife wife01 = new Wife();
             wife01.SetName("a");
+            wife01.SetAge(16);
+            string wina = wife01.GetName();
+            Console.WriteLine(wina);
+            Wife d = new Wife();
+            d.Name ="sedfsedfwawdedawedawedawgse";
+            Console.WriteLine(d.Name  );
+            Console.ReadLine();
         }
 
 
