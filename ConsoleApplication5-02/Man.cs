@@ -8,10 +8,10 @@ namespace ConsoleApplication5_02
 {
     class Man
     {
-        private static string hit;
-        private static float  hp;
-        private static int htp;
-        private static int http;
+        private    string hit;
+        private  float  hp;
+        private  int htp;
+        private  int http;
         static int a = 2;
         public Man()
         {
@@ -22,14 +22,14 @@ namespace ConsoleApplication5_02
         {
             hit = hit + "2";
         }
-        public Man(float hp)
-            : this(hit)
+        public Man(string hit, float hp)
+            : this(hit )
         {
             hp = hp + 3;
         }
         
         public Man(int htp)
-            : this(hp)
+            : this()
         {
             htp = htp + 8;
         }
@@ -37,7 +37,7 @@ namespace ConsoleApplication5_02
         {
             http = http + 8;
         }
-        public float Hp
+        public   float  Hp
         {
             get
             {
@@ -48,7 +48,7 @@ namespace ConsoleApplication5_02
                 hp = value;
             }
         }
-        public string Hit
+        public string  Hit
         {
             get
             {

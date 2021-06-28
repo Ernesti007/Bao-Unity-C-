@@ -10,7 +10,26 @@ namespace ConsoleApplication5_02
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("你要创建几组用户：");
+            int num = int.Parse(Console.ReadLine());
+            UserList listUser = new UserList(num);
+            for (int i = 0; i < num; i++)
+            {
+                Console.WriteLine("请输入第{0}个用户的名字：", i + 1);
+                string name = Console.ReadLine();
+                Console.WriteLine("请输入第{0}个用户的年龄：", i + 1);
+                int age = int.Parse(Console.ReadLine());
+                listUser.Add(new User(name, age));
+            }
+            for (int i = 0; i < num; i++)
+            {
+                User tempUser = listUser.GetElement(i);
+                Console.WriteLine("用户{0}的名字是{1}", i + 1, tempUser.Name);
+                Console.WriteLine("用户{0}的年龄是{1}", i + 1, tempUser.Age);
+            }
+            listUser.Insert(new User ("a", 9 ), 1);
+            Console.WriteLine();
+            Console.ReadLine();
         }
 
         /*static void Main(string[] args)

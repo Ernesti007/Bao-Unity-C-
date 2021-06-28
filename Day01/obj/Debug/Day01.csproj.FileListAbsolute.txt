@@ -16,3 +16,6 @@ G:\ALLSOFT\Git\Bao-Unity-C-\Day01\bin\Debug\Day01.pdb
 G:\ALLSOFT\Git\Bao-Unity-C-\Day01\obj\Debug\Day01.csprojResolveAssemblyReference.cache
 G:\ALLSOFT\Git\Bao-Unity-C-\Day01\obj\Debug\Day01.exe
 G:\ALLSOFT\Git\Bao-Unity-C-\Day01\obj\Debug\Day01.pdb
+D:\ALLSOFT\Git\Bao-Unity-C-\Day01\bin\Debug\Day01.exe.config
+D:\ALLSOFT\Git\Bao-Unity-C-\Day01\obj\Debug\Day01.exe
+D:\ALLSOFT\Git\Bao-Unity-C-\Day01\obj\Debug\Day01.pdb
