@@ -8,6 +8,40 @@ namespace ConsoleApplication5_02
 {
     class Wife
     {
+        private  string name;
+        private  int age;
+        public Wife(string name, int age)
+        {
+            this.name=name;
+            this.age = age;
+
+        }
+        public string  Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+        public int Age
+        {
+            get
+            {
+                return age;
+            }
+            set
+            {
+                age = value;
+            }
+        } 
+
+    }
+    /*class Wife
+    {
         public  string Name;
 
         private int Age;
@@ -34,5 +68,5 @@ namespace ConsoleApplication5_02
         {
             return Name;
         }
-    }
+    }*/
 }

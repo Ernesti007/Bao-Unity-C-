@@ -1,0 +1,6 @@
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplicationtimer\bin\Debug\ConsoleApplicationtimer.exe.config
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplicationtimer\obj\Debug\ConsoleApplicationtimer.csprojResolveAssemblyReference.cache
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplicationtimer\bin\Debug\ConsoleApplicationtimer.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplicationtimer\bin\Debug\ConsoleApplicationtimer.pdb
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplicationtimer\obj\Debug\ConsoleApplicationtimer.exe
+G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplicationtimer\obj\Debug\ConsoleApplicationtimer.pdb
