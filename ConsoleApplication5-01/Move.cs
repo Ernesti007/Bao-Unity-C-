@@ -12,18 +12,9 @@ namespace ConsoleApplication5_01
    
     enum MoveDirection : int
     {
-        Up,
-        Down,
-        Left,
-        Right
+        w,
+        s,
+        a,
+        d
     }
-    [Flags]
-    enum Person
-    {
-        tall = 2,
-        speek = 4,
-        bai = 8,
-        hei = 16
-    }
-
 }

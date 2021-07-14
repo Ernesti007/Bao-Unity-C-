@@ -7,3 +7,6 @@ G:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\obj\Debug\ConsoleApplication5
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\bin\Debug\ConsoleApplication5-01.exe.config
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\obj\Debug\ConsoleApplication5-01.exe
 D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\obj\Debug\ConsoleApplication5-01.pdb
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\bin\Debug\ConsoleApplication5-01.exe
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\bin\Debug\ConsoleApplication5-01.pdb
+D:\ALLSOFT\Git\Bao-Unity-C-\ConsoleApplication5-01\obj\Debug\ConsoleApplication5-01.csprojResolveAssemblyReference.cache

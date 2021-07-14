@@ -6,193 +6,188 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication5_01
 {
-    class GameCore
+     class GameCore
     {
-        private static int[] RemoveZero(int[] array)    //移动0到末尾！！！！！！！！！！！！
+        private  int[,] map;//原二维数组
+        private  int[] coche;//第一次获取的缓存数组以及去零操作的数组
+        private int[] zeroIndex;//记录所有0元素的索引,两个位置记录一个索引代表一个坐标点
+        private int i2;//记录有几个坐标点已经记录到上面了
+         private Random  random;//用于随机选择 是0元素 的坐标
+        public GameCore()
+        {
+            map = new int[4, 4]
+            {
+          {2,2,4,2},
+          {2,0,0,2},
+          {2,4,4,0},
+          {2,2,2,0}
+            };
+            PrintMap();
+            coche=new int[4];
+            zeroIndex = new int[32];
+            i2 = 0;
+            random =new Random() ;
+        }
+        private  void RemoveZero()//移动0到末尾！！！！！！！！！！！！
         {
             int t = 0;//记录已经填过的索引
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < coche.Length; i++)
             {      //拿一个数
-                if (array[i] == 0) continue;
+                if (coche[i] == 0) continue;
                 else
                 {
-                    if (t == i) array[t] = array[i];                //移和填是同一位
+                    if (t == i) coche[t] = coche[i];                //移和填是同一位
                     else if (t != i)                //不是同一位
                     {
-                        array[t] = array[i];
-                        array[i] = 0;
+                        coche[t] = coche[i];
+                        coche[i] = 0;
                     }
                     t++;
                 }
             }
-            return array;
         }
-        private static int[] RemoveZeroBack(int[] array)    //移动0到开头！！！！！！！！！！！！
+        private  void Sum()//相邻相同的相加
         {
-            int t = array.Length - 1;//记录已经填过的索引
-            for (int i = array.Length - 1; i >= 0; i--)
-            {      //拿一个数
-                if (array[i] == 0) continue;
-                else
+            for (int i = 0; i < coche .Length - 1; i++)
+            {
+                if (coche[i] != 0 && coche[i] == coche[i + 1])
                 {
-                    if (t == i) array[t] = array[i];                //移和填是同一位
-                    else if (t != i)                //不是同一位
-                    {
-                        array[t] = array[i];
-                        array[i] = 0;
-                    }
-                    t--;
+                    coche[i] += coche[i + 1];
+                    coche[i + 1] = 0;
                 }
             }
-            return array;
         }
-        private static int[] Sum(int[] array)     //相邻相同的相加
+        private  void  UpLoad( int Lie)//上移
         {
-            for (int i = 0; i < array.Length - 1; i++)
+            for (int i = 0; i < map.GetLength(0); i++)//获取数组行数
             {
-                if (array[i] != 0 && array[i] == array[i + 1])
-                {
-                    array[i] += array[i + 1];
-                    array[i + 1] = 0;
-                }
+                coche[i] = map[i, Lie];
             }
-            return array;
         }
-        private static int[] UpLoad(int[,] array, int Lie)//上移
+        private  void  DownLoad(int Lie)//下移
         {
-            int[] arrayCache = new int[array.GetLength(0)];
-            for (int i = 0; i < array.GetLength(0); i++)//获取数组行数
+            for (int i = map.GetLength(0) - 1; i >= 0; i--)//获取数组行数
             {
-                arrayCache[i] = array[i, Lie];
+                coche[3-i] = map[i, Lie];
             }
-            return arrayCache;
         }
-        private static int[] DownLoad(int[,] array, int Lie)//下移
+        private  void  LeftLoad(int Hang)//左移
         {
-            int[] arrayCache = new int[array.GetLength(0)];
-            for (int i = array.GetLength(0) - 1; i >= 0; i--)//获取数组行数
+            for (int i = 0; i < map.GetLength(1); i++)//获取数组列数
             {
-                arrayCache[i] = array[i, Lie];
+                coche[i] = map[Hang, i];
             }
-            return arrayCache;
         }
-        private static int[] LeftLoad(int[,] array, int Hang)//左移
+        private  void  RightLoad(int Hang)//右移
         {
-            int[] arrayCache = new int[array.GetLength(1)];
-            for (int i = 0; i < array.GetLength(1); i++)//获取数组列数
+            
+            for (int i = map.GetLength(1) - 1; i >= 0; i--)//获取数组列数
             {
-                arrayCache[i] = array[Hang, i];
+                coche[3-i] = map[Hang, i];
             }
-            return arrayCache;
         }
-        private static int[] RightLoad(int[,] array, int Hang)//右移
+        private  void  ReUpLoad( int Lie)//还原上移
         {
-            int[] arrayCache = new int[array.GetLength(1)];
-            for (int i = array.GetLength(1) - 1; i >= 0; i--)//获取数组列数
+            for (int i = 0; i < coche.Length; i++)//获取数组行数
             {
-                arrayCache[i] = array[Hang, i];
+               map[i, Lie] = coche[i];
             }
-            return arrayCache;
         }
-        private static int[,] ReUpLoad(int[,] array, int[] array2, int Lie)//还原上移
+        private void ReDownLoad(int Lie)//还原下移
         {
-            for (int i = 0; i < array2.Length; i++)//获取数组行数
+            for (int i = 0; i < coche.Length; i++)//获取数组行数
             {
-                array[i, Lie] = array2[i];
+                map[3-i, Lie] = coche[i];
             }
-            return array;
         }
-        private static int[,] ReDownLoad(int[,] array, int[] array2, int Lie)//还原下移
+        private  void  ReLeftLoad(int Hang)//还原左移
         {
-            array2 = RemoveZeroBack(array2);
-            for (int i = 0; i < array2.Length; i++)//获取数组行数
+            for (int i = 0; i < coche.Length; i++)//获取数组列数
             {
-                array[i, Lie] = array2[i];
+                map[Hang, i] = coche[i];
             }
-            return array;
         }
-        private static int[,] ReLeftLoad(int[,] array, int[] array2, int Hang)//还原左移
+        private void  ReRightLoad(int Hang)//还原右移
         {
-            for (int i = 0; i < array2.Length; i++)//获取数组列数
+            for (int i = 0; i < coche.Length; i++)//获取数组列数
             {
-                array[Hang, i] = array2[i];
+                map[Hang, 3-i] = coche[i];
             }
-            return array;
         }
-        private static int[,] ReRightLoad(int[,] array, int[] array2, int Hang)//还原右移
+        public   void Move(MoveDirection direction)
         {
-            array2 = RemoveZeroBack(array2);
-            for (int i = 0; i < array2.Length; i++)//获取数组列数
-            {
-                array[Hang, i] = array2[i];
-            }
-            return array;
-        }
-        private static void Move(int[,] map, MoveDirection direction)
-        {
+            Console.Clear();
             switch (direction)
             {
-                case MoveDirection.Up:
-                    MoveUp(map);
+                case MoveDirection.w:
+                    MoveUp();
                     break;
-                case MoveDirection.Down:
-                    MoveDown(map);
+                case MoveDirection.s:
+                    MoveDown();
                     break;
-                case MoveDirection.Left:
-                    MoveLeft(map);
+                case MoveDirection.a:
+                    MoveLeft();
                     break;
-                case MoveDirection.Right:
-                    MoveRight(map);
+                case MoveDirection.d:
+                    MoveRight();
                     break;
             }
         }
 
 
-        private static void MoveUp(int[,] array)
+        private  void MoveUp()
         {
-            for (int i = 0; i < array.GetLength(1); i++)//读取数组列数
+            for (int i = 0; i < map.GetLength(1); i++)//读取数组列数
             {
-                int[] Coche = UpLoad(array, i);         //获取每一列的数组
-                Coche = RemoveZero(Coche);              //去0   
-                Coche = Sum(Coche);                     //加
-                Coche = RemoveZero(Coche);              //去0
-                array = ReUpLoad(array, Coche, i);      //复原
+                UpLoad(i);         //获取一列的数组
+                RemoveZero();              //去0   
+                Sum();           //加
+                RemoveZero();              //去0
+                ReUpLoad(i);      //复原
             }
+            CreateNumber();
+            PrintMap();
         }
-        private static void MoveDown(int[,] array)
+        private  void MoveDown()
         {
-            for (int i = 0; i < array.GetLength(1); i++)//读取数组列数
+            for (int i = 0; i < map.GetLength(1); i++)//读取数组列数
             {
-                int[] Coche = DownLoad(array, i);         //获取每一列的数组
-                Coche = RemoveZero(Coche);              //去0   
-                Coche = Sum(Coche);                     //加
-                Coche = RemoveZero(Coche);              //去0
-                array = ReDownLoad(array, Coche, i);      //复原
+                DownLoad(i);         //获取每一列的数组
+                RemoveZero();              //去0   
+                Sum();           //加
+                RemoveZero();              //去0
+                ReDownLoad(i);      //复原
             }
+            CreateNumber();
+            PrintMap();
         }
-        private static void MoveLeft(int[,] array)
+        private  void MoveLeft()
         {
-            for (int i = 0; i < array.GetLength(0); i++)//读取数组行数
+            for (int i = 0; i < map.GetLength(0); i++)//读取数组行数
             {
-                int[] Coche = LeftLoad(array, i);         //获取每一行的数组
-                Coche = RemoveZero(Coche);              //去0   
-                Coche = Sum(Coche);                     //加
-                Coche = RemoveZero(Coche);              //去0
-                array = ReLeftLoad(array, Coche, i);      //复原
+                LeftLoad(i);         //获取每一行的数组
+                RemoveZero();              //去0   
+                Sum();                     //加
+                RemoveZero();              //去0
+                ReLeftLoad(i);      //复原
             }
+            CreateNumber();
+            PrintMap();
         }
-        private static void MoveRight(int[,] array)
+        private  void MoveRight()
         {
-            for (int i = 0; i < array.GetLength(0); i++)//读取数组行数
+            for (int i = 0; i <map .GetLength(0); i++)//读取数组行数
             {
-                int[] Coche = RightLoad(array, i);         //获取每一行的数组
-                Coche = RemoveZero(Coche);              //去0   
-                Coche = Sum(Coche);                     //加
-                Coche = RemoveZero(Coche);              //去0
-                array = ReRightLoad(array, Coche, i);      //复原
+                RightLoad(i);         //获取每一行的数组
+                RemoveZero();              //去0   
+                Sum();                     //加
+                RemoveZero();              //去0
+                ReRightLoad(i);      //复原
             }
+            CreateNumber();
+            PrintMap();
         }
-        private static void PrintMap(int[,] map)
+        private  void PrintMap()
         {
             for (int r = 0; r < map.GetLength(0); r++)
             {
@@ -201,6 +196,32 @@ namespace ConsoleApplication5_01
                     Console.Write(map[r, c] + "\t");
                 }
                 Console.WriteLine();
+            }
+        }
+        private void CreateNumber()
+        {
+            FindZeroNumber();
+            i2=random.Next(0,i2);
+            if (random .Next (0,10)==5)
+            {
+                map[zeroIndex[i2 * 2], zeroIndex[i2 * 2 + 1]] = 4;
+            }
+            else map[zeroIndex[i2 * 2], zeroIndex[i2 * 2 + 1]] = 2;
+        }
+        private void FindZeroNumber()
+        {
+            i2 = 0;
+            for (int i = 0; i < map.GetLength(0) ; i++)
+            {
+                for (int r = 0; r <map.GetLength(1); r++)
+                {
+                    if (map[i, r] == 0)
+                    {
+                        zeroIndex[i2*2] = i;
+                        zeroIndex[i2*2+1] = r;
+                        i2++;
+                    }
+                }
             }
         }
     }
