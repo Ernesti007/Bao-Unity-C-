@@ -11,16 +11,24 @@ namespace ConsoleApplication5_01
         static void Main()
         {
             GameCore game = new GameCore();
-
-            for (; true ;)
+            while (true )
             {
-                string j = Console.ReadLine();
-                if (j == "w") game.Move(MoveDirection.w);
-                if (j == "s") game.Move(MoveDirection.s);
-                if (j == "a") game.Move(MoveDirection.a);
-                if (j == "d") game.Move(MoveDirection.d);
+                switch (Console.ReadLine())
+            {
+                case "w":
+                    game.Move(MoveDirection.w);
+                    break;
+                case "s":
+                    game.Move(MoveDirection.s);
+                    break;
+                case "a":
+                    game.Move(MoveDirection.a);
+                    break;
+                case "d":
+                    game.Move(MoveDirection.d);
+                    break;
             }
-            
+            }
         }
         
         //    private  int[,] map;
