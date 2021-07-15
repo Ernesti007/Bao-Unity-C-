@@ -11,26 +11,27 @@ namespace ConsoleApplication5_01
         static void Main()
         {
             GameCore game = new GameCore();
-            while (true )
+            while (true)
             {
                 switch (Console.ReadLine())
-            {
-                case "w":
-                    game.Move(MoveDirection.w);
-                    break;
-                case "s":
-                    game.Move(MoveDirection.s);
-                    break;
-                case "a":
-                    game.Move(MoveDirection.a);
-                    break;
-                case "d":
-                    game.Move(MoveDirection.d);
-                    break;
+                {
+                    case "w":
+                        game.Move(MoveDirection.w);
+                        break;
+                    case "s":
+                        game.Move(MoveDirection.s);
+                        break;
+                    case "a":
+                        game.Move(MoveDirection.a);
+                        break;
+                    case "d":
+                        game.Move(MoveDirection.d);
+                        break;
+                }
             }
-            }
+            Console.ReadLine();
         }
-        
+
         //    private  int[,] map;
         //    private  int[] RemoveZero(int[] array)    //移动0到末尾！！！！！！！！！！！！
         //    {
