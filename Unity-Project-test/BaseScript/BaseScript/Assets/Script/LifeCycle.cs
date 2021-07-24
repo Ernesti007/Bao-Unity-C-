@@ -4,11 +4,18 @@ using UnityEngine;
 /// <summary>
 ///
 /// <summary>
-public class LifeCycle : MonoBehaviour
+namespace BaomageTest
 {
-    private void A()
+    class LifeCycle : MonoBehaviour
     {
-        Debug.Log("a");
-        Debug.Log("b");
+        [SerializeField]
+        private float abcd = 3;
+        private void Start()
+        {
+            int a = 3;
+            int b = 6;
+            int c = a + b;
+        }
     }
 }
+
