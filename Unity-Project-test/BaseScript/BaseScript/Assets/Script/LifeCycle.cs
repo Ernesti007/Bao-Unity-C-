@@ -8,6 +8,7 @@ public class LifeCycle : MonoBehaviour
 {
     private void A()
     {
-
+        Debug.Log("a");
+        Debug.Log("b");
     }
 }
