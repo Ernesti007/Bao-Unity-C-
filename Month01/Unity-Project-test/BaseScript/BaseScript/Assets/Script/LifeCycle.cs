@@ -11,11 +11,22 @@ namespace BaomageTest
         [SerializeField]
         private void OnGUI()
         {
-            if (GUILayout.Button("ann"))
+            if (GUILayout.Button("test"))
             {
-                Vector3  Vect = new Vector3(0,5,8);
-                this.transform .position=Vect ;
+                foreach (Transform item in this.GetComponent <Transform >())
+                {
+                    print(item.name  );
+                }
             }
+
+
+
+
+            //    if (GUILayout.Button("ann"))
+            //    {
+            //        Vector3  Vect = new(0,5,8);
+            //        this.transform .position=Vect ;
+            //    }
         }
     }
 }
