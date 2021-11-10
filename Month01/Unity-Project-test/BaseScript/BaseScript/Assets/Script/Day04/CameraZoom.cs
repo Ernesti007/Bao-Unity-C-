@@ -50,8 +50,8 @@ public class CameraZoom : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             //修改缩放等级
-            isFar = !isFar; 
-        } 
+            isFar = !isFar;
+        }
         if (isFar)
         {
             //拉远 20  --》 60
@@ -100,6 +100,6 @@ public class CameraZoom : MonoBehaviour
             //currentLevel = currentLevel < zoomLevels.Length - 1 ? currentLevel + 1 : 0;
             currentLevel = (currentLevel + 1) % zoomLevels.Length;
         }
-        camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, zoomLevels[currentLevel], 0.1f); 
+        camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, zoomLevels[currentLevel], 0.1f);
     }
 }

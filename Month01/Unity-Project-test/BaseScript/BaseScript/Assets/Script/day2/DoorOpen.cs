@@ -9,8 +9,4 @@ public class DoorOpen : MonoBehaviour
     {
         ani = this.GetComponent<Animation>();
     }
-    private void OnMouseDown()
-    {
-       ani.Play ()
-    }
 }
